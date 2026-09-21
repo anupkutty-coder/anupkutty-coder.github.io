@@ -15,9 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 40px 20px;
         }
         
         .container {
@@ -25,8 +23,13 @@
             padding: 60px 40px;
             border-radius: 10px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
             text-align: center;
-            max-width: 600px;
+            margin-bottom: 50px;
         }
         
         h1 {
@@ -39,7 +42,6 @@
             color: #666;
             font-size: 1.2em;
             line-height: 1.6;
-            margin-bottom: 30px;
         }
         
         .emoji {
@@ -47,22 +49,110 @@
             margin-bottom: 20px;
         }
         
+        .favorites-section {
+            margin-top: 50px;
+        }
+        
+        .favorites-section h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 15px;
+        }
+        
+        .team-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .team-card.cricket {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe0b2 100%);
+            border-left: 5px solid #ff9800;
+        }
+        
+        .team-card.basketball {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 5px solid #1976d2;
+        }
+        
+        .team-card h3 {
+            color: #333;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .team-details {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .team-details p {
+            margin-bottom: 10px;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            color: #333;
+        }
+        
         .footer {
             color: #999;
             font-size: 0.9em;
-            margin-top: 30px;
+            margin-top: 50px;
             border-top: 1px solid #eee;
             padding-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="emoji">👋</div>
-        <h1>Anup Kutty's First Webpage</h1>
-        <p class="welcome-message">
-            Welcome to my first webpage! This is a simple welcome page created and published on GitHub Pages.
-        </p>
+        <div class="header">
+            <div class="emoji">👋</div>
+            <h1>Anup Kutty's First Webpage</h1>
+            <p class="welcome-message">
+                Welcome to my personal webpage! Here you can learn about me and my favorite sports teams.
+            </p>
+        </div>
+        
+        <div class="favorites-section">
+            <h2>⚽ My Favorite Sports Teams</h2>
+            
+            <!-- Cricket Team -->
+            <div class="team-card cricket">
+                <h3>🏏 Chennai Super Kings (CSK)</h3>
+                <div class="team-details">
+                    <p><span class="detail-label">Sport:</span> Cricket (IPL)</p>
+                    <p><span class="detail-label">Founded:</span> 2008</p>
+                    <p><span class="detail-label">Home Ground:</span> M. A. Chidambaram Stadium, Chennai</p>
+                    <p><span class="detail-label">IPL Titles:</span> 5 (2010, 2011, 2018, 2021, 2023)</p>
+                    <p><span class="detail-label">Captain (Recent):</span> MS Dhoni</p>
+                    <p><span class="detail-label">About:</span> Chennai Super Kings is one of the most successful and consistent IPL teams. Known for their batting firepower and strategic gameplay, CSK has won multiple championship titles. They are based in Chennai and have a massive fan following across India.</p>
+                </div>
+            </div>
+            
+            <!-- Basketball Team -->
+            <div class="team-card basketball">
+                <h3>🏀 San Antonio Spurs</h3>
+                <div class="team-details">
+                    <p><span class="detail-label">Sport:</span> Basketball (NBA)</p>
+                    <p><span class="detail-label">Founded:</span> 1973</p>
+                    <p><span class="detail-label">Home Arena:</span> AT&T Center, San Antonio, Texas</p>
+                    <p><span class="detail-label">NBA Championships:</span> 5 (1999, 2003, 2005, 2007, 2014)</p>
+                    <p><span class="detail-label">Head Coach:</span> Gregg Popovich</p>
+                    <p><span class="detail-label">About:</span> The San Antonio Spurs are one of the most successful franchises in NBA history. Known for their legendary players like Tim Duncan, Tony Parker, and Manu Ginóbili, the Spurs are famous for their consistency, discipline, and winning culture under legendary coach Gregg Popovich.</p>
+                </div>
+            </div>
+        </div>
+        
         <div class="footer">
             <p>Published on GitHub Pages 🚀</p>
         </div>
